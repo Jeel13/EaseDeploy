@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; 
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  width: 600px;
+  text-align: center;
+  border: 1px solid #dcdcdc; 
+}
+
+input,
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc; 
+}
+
+button {
+  background: linear-gradient(135deg, #2196f3, #1976d2); /* Blue gradient */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1976d2, #1565c0); /* Darker blue gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
+  cursor: not-allowed;
+}
+
+.logs-container {
+  text-align: left;
+  margin-top: 20px;
+  border: 1px solid #dcdcdc; 
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #1e1e1e; /* Dark background for terminal look */
+  color: #cfcfcf; /* Light gray text for better contrast */
+  max-height: 250px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px; /* Adjust font size for terminal effect */
+}
+
+.logs-container code {
+  display: block;
+}
+
+.logs-container .command-prompt {
+  color: #7cfc00; /* Green color for the prompt */
+  font-weight: bold;
+}
+
+
+.status-message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  background: #e3f2fd; /* Light blue background */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.preview-url {
+  background-color: #e3f2fd; /* Light blue background */
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid #dcdcdc; /* Blue border */
+}
+
+.preview-url a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.preview-url a:hover {
+  text-decoration: underline; 
+}
+
